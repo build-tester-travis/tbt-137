@@ -15,9 +15,7 @@ jobs:
 
 after_success:
   - echo passed
-  - echo $ACCOUNT_VAR
-  - echo $accSecretVar
-  - echo $accUnsecret
+  - echo $overrideVar
 after_failure:
   - echo failed
   - echo $TRAVIS_TEST_RESULT
